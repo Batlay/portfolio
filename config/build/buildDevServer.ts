@@ -1,9 +1,10 @@
 import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
+import { BuildOptions } from "./types/types";
 
-export function buildDevServer(): DevServerConfiguration {
+export function buildDevServer(options: BuildOptions): DevServerConfiguration {
   return {
-        static: './dist',
-        port: env.port ?? '3000',
-        open: true,
-      }
+    static: './dist',
+    port: options.port ?? '3000',
+    open: true,
+  }
 }
