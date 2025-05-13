@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router';
-import App from '../components/App';
-import { LazyShop } from '../pages/shop/Shop.lazy';
-import { LazyAbout } from '../pages/about/About.lazy';
+import App from '@/components/App';
+import { LazyShop } from '@/pages/shop/Shop.lazy';
+import { LazyAbout } from '@/pages/about/About.lazy';
 import { Suspense } from 'react';
 
 export default createBrowserRouter([
