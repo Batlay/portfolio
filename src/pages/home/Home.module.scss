@@ -1,0 +1,18 @@
+$main-color: white;
+$secondary-color: #6b8f71;
+
+.home {
+  padding: 20px 250px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.main {
+  background-color: $main-color;
+}

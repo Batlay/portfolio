@@ -1,0 +1,41 @@
+@use '@/styles/variables';
+
+.sidebar {
+  background-color: variables.$secondary-color;
+  color: variables.$main-color;
+  text-align: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto 0;
+    font-size: 26px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    a {
+      display: block;
+      padding: 10px 0;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      color: white;
+      text-decoration: none;
+      transition: border-color 0.2s ease-in-out;
+
+      &:hover {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}

@@ -30,6 +30,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     ],
   }
 
+
   const tsLoader = {
     test: /\.tsx?$/,
     use: [
@@ -76,7 +77,15 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     ],
   }
 
-  return [assetLoader, scssLoader, 
+  const cssLoader = {
+  test: /\.css$/i,
+  use: [
+    isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+    'css-loader',
+  ],
+};
+
+  return [assetLoader, scssLoader, cssLoader,
     // tsLoader, 
     babelLoader, svgrLoader]
 }

@@ -1,0 +1,28 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%; /* Ensure the html element takes full height */
+  font-family: Arial, sans-serif; /* Set a default font */
+  font-size: 16px; /* Base font size */
+}
+
+:root {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh; /* Ensure body takes at least full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Add some padding around the body content */
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5; /* Improve readability */
+}
