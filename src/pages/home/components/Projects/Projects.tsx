@@ -1,7 +1,7 @@
 import styles from '@/pages/home/components/Projects/Projects.module.scss';
-import breezeHouse from '@/assets/projects/breezeHouse.png';
-import comfortStore from '@/assets/projects/comfortStore.png';
-import portfolio from '@/assets/projects/portfolio.png';
+import breezeHouse from '@/assets/project/breezeHouse.png';
+import comfortStore from '@/assets/project/comfortStore.png';
+import portfolio from '@/assets/project/portfolio.png';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
