@@ -46,17 +46,23 @@ function Card({ project }: ProjectCardProps) {
         </div>
         <div className={styles.card_back}>
           <div className={styles.card_back_container}>
-            <h2>Интернет-магазин кондиционеров:</h2>
+            <h2>{project.description}</h2>
             <ul>
               Используемые технологии:
-              <li>typescript</li>
-              <li>vite</li>
-              <li>react</li>
-              <li>react-query</li>
-              <li>react-hook-form</li>
+              {project.technologies.map((technology) => (
+                <li>{technology}</li>
+              ))}
             </ul>
-            <br />
-            <p>Фичи: пагинация, фильтрация продуктов, поиск товаров, корзина, JWT токены.</p>
+            <p>
+              Фичи:{' '}
+              {project.features.map((feature, index) => {
+                if (index === project.features.length - 1) {
+                  return <span>{feature}.</span>;
+                } else {
+                  return <span>{feature},</span>;
+                }
+              })}
+            </p>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ function About() {
       <div className={styles.about_img}>
         <img src={profileImg} />
       </div>
-      <div>
+      <div className={styles.about_text}>
         <h1>Привет 👋, я Глеб</h1>
         <h2>Frontend Developer</h2>
         <br />

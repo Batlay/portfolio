@@ -1,6 +1,20 @@
 @use '@/styles/variables';
 
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .projects_wrapper {
+  opacity: 0; /* Start hidden */
+  animation: fade-in-up 1s ease forwards; /* 2s animation */
   width: 100%;
   margin-top: 40px;
 
@@ -27,7 +41,6 @@
 }
 
 .project_card_wrapper {
-  flex: 0 0 calc(100% / 3);
   padding: 10px; /* по необходимости */
   box-sizing: border-box;
 }
@@ -175,6 +188,7 @@
   }
 
   p {
+    margin-top: 10px;
     font-size: 12px;
   }
 
@@ -185,5 +199,17 @@
     border-radius: 5%;
     background-color: white;
     color: black;
+  }
+}
+
+@media only screen and (width <= 1280px) {
+  .card {
+    height: 200px;
+  }
+}
+
+@media only screen and (width <= 640px) {
+  .card {
+    height: 200px;
   }
 }
