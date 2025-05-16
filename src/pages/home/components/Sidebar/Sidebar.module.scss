@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     margin: auto 0;
     font-size: 26px;
 
@@ -35,6 +35,30 @@
       &:hover {
         border-top: 2px solid white;
         border-bottom: 2px solid white;
+      }
+    }
+  }
+}
+
+@media screen and (width <= 640px) {
+  .sidebar {
+    height: 60px;
+
+    nav {
+      font-size: 14px;
+
+      ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      a {
+        padding: 5px 0;
       }
     }
   }

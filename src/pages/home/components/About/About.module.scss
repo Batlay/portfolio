@@ -46,6 +46,7 @@
   }
 
   ul {
+    margin-top: 15px;
     list-style-position: inside;
   }
 
@@ -140,5 +141,30 @@
 @media (width <= 640px) {
   .about {
     font-size: 12px;
+    text-align: center;
+
+    &_text {
+      justify-self: center;
+    }
+
+    &_img {
+      justify-self: center;
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    li {
+      margin-top: 6px;
+    }
+
+    ul {
+      margin-top: 5px;
+    }
   }
 }

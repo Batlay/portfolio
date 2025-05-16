@@ -54,23 +54,7 @@ const Carousel = ({ projects }: Props) => {
   // ширина всей ленты (в процентах)
   const totalWidthPercent = (totalProjects / slidesToShow) * 100;
 
-  // смещение
-  const translateXPercent = -(
-    currentIndex *
-    (100 / totalProjects) *
-    slidesToShow
-  );
-
-  function calculateTranslateX(): string {
-    if (currentIndex === 0) {
-      return `translateX(${translateXPercent}%)`;
-    } else if (currentIndex > 2 && currentIndex < totalProjects - 4) {
-      return `translateX(calc(${translateXPercent}% + 50px))`;
-    } else {
-      return `translateX(calc(${translateXPercent}% + 100px))`;
-    }
-  }
-  const translateXValue: string = calculateTranslateX();
+  const translateXPercent = -(currentIndex * (100 / slidesToShow));
 
   return (
     <div className={styles.projects_carousel_container}>
@@ -78,7 +62,7 @@ const Carousel = ({ projects }: Props) => {
         className={styles.projects_slides}
         style={{
           width: `${totalWidthPercent}%`,
-          transform: translateXValue,
+          transform: ` translateX(${translateXPercent}%)`,
         }}
       >
         {projects.map((project, index) => (

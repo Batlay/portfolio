@@ -6,8 +6,14 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import path from 'path';
+import Dotenv from 'dotenv-webpack';
 
-export function buildPlugins({ mode, paths, analyzer = false, platform }: BuildOptions): Configuration['plugins'] {
+export function buildPlugins({
+  mode,
+  paths,
+  analyzer = false,
+  platform,
+}: BuildOptions): Configuration['plugins'] {
   const isDev = mode === 'development';
   const isProd = mode === 'production';
 
@@ -19,6 +25,7 @@ export function buildPlugins({ mode, paths, analyzer = false, platform }: BuildO
     new DefinePlugin({
       __PLATFORM__: JSON.stringify(platform),
     }),
+    new Dotenv(),
   ];
 
   if (isDev) {

@@ -10,7 +10,6 @@ function About() {
       <div className={styles.about_text}>
         <h1>Привет 👋, я Глеб</h1>
         <h2>Frontend Developer</h2>
-        <br />
         <ul>
           Навыки и технологии:
           <li>Языки программирования: JavaScript, TypeScript</li>

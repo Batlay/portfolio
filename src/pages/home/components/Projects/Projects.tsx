@@ -25,8 +25,9 @@ const projects: IProject[] = [
     description: 'Интернет-магазин кондиционеров',
     technologies: [
       'typescript',
-      'vite',
       'react',
+      'tailwind',
+      'vite',
       'react-query',
       'react-hook-form',
     ],
@@ -46,6 +47,7 @@ const projects: IProject[] = [
     technologies: [
       'typescript',
       'vite',
+      'tailwind',
       'react',
       'react-query',
       'react-hook-form',
@@ -71,7 +73,7 @@ const projects: IProject[] = [
     image: portfolio,
     url: 'https://comfort-store-nu.vercel.app/',
     description: 'Просто крутое портфолио',
-    technologies: ['webpack', 'react'],
+    technologies: ['webpack', 'react', 'scss'],
     features: ['анимации'],
   },
   {
