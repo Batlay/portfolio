@@ -2,7 +2,7 @@ const globals = require('globals');
 const react = require('eslint-plugin-react');
 const js = require('@eslint/js');
 const ts = require('@typescript-eslint/eslint-plugin');
-const tsParser = require( '@typescript-eslint/parser');
+const tsParser = require('@typescript-eslint/parser');
 
 module.exports = [
   js.configs.recommended,

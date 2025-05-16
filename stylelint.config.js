@@ -1,5 +1,3 @@
-const plugin = require("eslint-plugin-react");
-
 module.exports = {
   extends: [
     "stylelint-config-standard-scss", 
