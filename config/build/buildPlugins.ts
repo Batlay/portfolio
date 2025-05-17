@@ -25,13 +25,13 @@ export function buildPlugins({
     new DefinePlugin({
       __PLATFORM__: JSON.stringify(platform),
     }),
-    new Dotenv(),
   ];
 
   if (isDev) {
     plugins.push(new ProgressPlugin());
     plugins.push(new ForkTsCheckerWebpackPlugin());
     plugins.push(new ReactRefreshWebpackPlugin());
+    plugins.push(new Dotenv());
   }
 
   if (isProd) {

@@ -70,7 +70,7 @@ const projects: IProject[] = [
   {
     title: 'Портфолио',
     image: portfolio,
-    url: 'https://comfort-store-nu.vercel.app/',
+    url: 'https://portfolio-ten-theta-36.vercel.app/',
     description: 'Просто крутое портфолио',
     technologies: ['webpack', 'react', 'scss'],
     features: ['анимации'],
