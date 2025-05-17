@@ -59,16 +59,16 @@ function Card({ project }: ProjectCardProps) {
             <ul>
               Используемые технологии:
               {project.technologies.map((technology) => (
-                <li>{technology}</li>
+                <li key={technology}>{technology}</li>
               ))}
             </ul>
             <p>
               Фичи:{' '}
               {project.features.map((feature, index) => {
                 if (index === project.features.length - 1) {
-                  return <span>{feature}.</span>;
+                  return <span key={index}>{feature}.</span>;
                 } else {
-                  return <span>{feature},</span>;
+                  return <span key={index}>{feature},</span>;
                 }
               })}
             </p>

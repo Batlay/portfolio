@@ -99,6 +99,7 @@
 @media screen and (width <= 640px) {
   .contacts {
     flex-direction: column;
+    gap: 10px;
 
     img {
       width: 250px;
