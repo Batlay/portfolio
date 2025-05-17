@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  min-height: 100vh; /* Ensure body takes at least full viewport height */
+  height: 100vh; /* Ensure body takes at least full viewport height */
   margin: 0; /* Remove default margin */
   padding: 0; /* Add some padding around the body content */
   font-family: Montserrat, sans-serif;

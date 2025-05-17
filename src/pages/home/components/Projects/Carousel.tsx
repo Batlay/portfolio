@@ -57,9 +57,9 @@ const Carousel = ({ projects }: Props) => {
   const translateXPercent = -(currentIndex * (100 / slidesToShow));
 
   return (
-    <div className={styles.projects_carousel_container}>
+    <div className={styles.carousel_wrapper}>
       <div
-        className={styles.projects_slides}
+        className={styles.carousel_full_width}
         style={{
           width: `${totalWidthPercent}%`,
           transform: ` translateX(${translateXPercent}%)`,
@@ -68,7 +68,7 @@ const Carousel = ({ projects }: Props) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={styles.project_card_wrapper}
+            className={styles.carousel_items_wrapper}
             style={{ flex: `0 0 calc(100% / ${slidesToShow})` }}
           >
             <Card project={project} />

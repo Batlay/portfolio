@@ -21,7 +21,6 @@ function About() {
           <li>Контейнеризация и деплой: Docker</li>
           <li>Eslint, Stylint, Prettier</li>
         </ul>
-        <br />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ $secondary-color: #6b8f71;
 .container {
   display: grid;
   grid-template-columns: 350px 1fr;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 0;
   padding-top: 0;
 }
@@ -31,6 +31,7 @@ $secondary-color: #6b8f71;
 
 @media screen and (width <= 640px) {
   .container {
+    grid-template-rows: 60px 1fr;
     grid-template-columns: 1fr;
   }
 

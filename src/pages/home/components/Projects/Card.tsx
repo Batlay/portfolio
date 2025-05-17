@@ -1,6 +1,6 @@
 import styles from '@/pages/home/components/Projects/Projects.module.scss';
 import { IProject } from './Projects';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { BsInfoCircle } from 'react-icons/bs';
 
 interface ProjectCardProps {
@@ -9,6 +9,13 @@ interface ProjectCardProps {
 
 function Card({ project }: ProjectCardProps) {
   const cardRef = useRef(null);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    const hasTouchSupport =
+      'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    setIsTouchDevice(hasTouchSupport);
+  }, []);
 
   const handleClick = () => {
     window.open(project.url, '_blank', 'noopener,noreferrer');
@@ -30,13 +37,15 @@ function Card({ project }: ProjectCardProps) {
 
   return (
     <div ref={cardRef} className={styles.card} onClick={handleClick}>
-      <BsInfoCircle
-        width={50}
-        height={50}
-        className={styles.card_info}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      />
+      {!isTouchDevice && (
+        <BsInfoCircle
+          width={50}
+          height={50}
+          className={styles.card_info}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+      )}
       <div className={styles.card_inner}>
         <div className={styles.card_front}>
           <p>{project.title}</p>

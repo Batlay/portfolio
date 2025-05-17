@@ -3,9 +3,8 @@ import breezeHouse from '@/assets/projects/breezeHouse.png';
 import comfortStore from '@/assets/projects/comfortStore.png';
 import portfolio from '@/assets/projects/portfolio.png';
 import musicSite from '@/assets/projects/music-site.png';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import runsmart from '@/assets/projects/runsmart.png';
+import monovision from '@/assets/projects/monovision.png';
 import Carousel from './Carousel';
 
 export interface IProject {
@@ -77,84 +76,20 @@ const projects: IProject[] = [
     features: ['анимации'],
   },
   {
-    title: 'Интернет-магазин Comfort Store',
-    image: comfortStore,
-    url: 'https://comfort-store-nu.vercel.app/',
-    description: 'Интернет-магазин кондиционеров',
-    technologies: [
-      'typescript',
-      'vite',
-      'react',
-      'react-query',
-      'react-hook-form',
-    ],
-    features: [
-      'пагинация',
-      'фильтрация продуктов',
-      'поиск товаров',
-      'корзина',
-      'JWT токены',
-    ],
+    title: 'Landing page Monovision-Studio',
+    image: monovision,
+    url: 'https://batlay.github.io/Monovision-Studio/src/',
+    description: 'Лэндинг',
+    technologies: ['css', 'js'],
+    features: ['адаптивная верстка'],
   },
   {
-    title: 'Портфолио',
-    image: portfolio,
-    url: 'https://comfort-store-nu.vercel.app/',
-    description: 'Интернет-магазин кондиционеров',
-    technologies: [
-      'typescript',
-      'vite',
-      'react',
-      'react-query',
-      'react-hook-form',
-    ],
-    features: [
-      'пагинация',
-      'фильтрация продуктов',
-      'поиск товаров',
-      'корзина',
-      'JWT токены',
-    ],
-  },
-  {
-    title: 'Интернет-магазин Comfort Store',
-    image: comfortStore,
-    url: 'https://comfort-store-nu.vercel.app/',
-    description: 'Интернет-магазин кондиционеров',
-    technologies: [
-      'typescript',
-      'vite',
-      'react',
-      'react-query',
-      'react-hook-form',
-    ],
-    features: [
-      'пагинация',
-      'фильтрация продуктов',
-      'поиск товаров',
-      'корзина',
-      'JWT токены',
-    ],
-  },
-  {
-    title: 'Портфолио',
-    image: portfolio,
-    url: 'https://comfort-store-nu.vercel.app/',
-    description: 'Интернет-магазин кондиционеров',
-    technologies: [
-      'typescript',
-      'vite',
-      'react',
-      'react-query',
-      'react-hook-form',
-    ],
-    features: [
-      'пагинация',
-      'фильтрация продуктов',
-      'поиск товаров',
-      'корзина',
-      'JWT токены',
-    ],
+    title: 'Landing page RunSmart',
+    image: runsmart,
+    url: 'https://batlay.github.io/RunSmart/src/',
+    description: 'Лэндинг',
+    technologies: ['css', 'js'],
+    features: ['верстка'],
   },
 ];
 

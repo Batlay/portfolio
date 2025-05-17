@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 50px;
   opacity: 0; /* Start hidden */
   animation: fade-in-up 1s forwards;
 }
@@ -28,7 +28,13 @@
   .skills_wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .skills_img {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -40,6 +46,10 @@
 }
 
 @media screen and (width <= 768px) {
+  .skills_wrapper {
+    padding: 0;
+  }
+
   .skills_img {
     width: 25px;
     height: 25px;
@@ -50,5 +60,9 @@
   .skills_img {
     width: 16px;
     height: 16px;
+  }
+
+  .skills_wrapper {
+    justify-content: space-around;
   }
 }
