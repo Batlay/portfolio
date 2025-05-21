@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    image: portfolio:v1
+    build: .
+    ports:
+      - '8080:80'
+    env_file:
+      - .env
+    restart: unless-stopped

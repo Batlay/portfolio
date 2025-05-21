@@ -1,0 +1,15 @@
+node_modules
+npm - debug.log
+README.md
+LICENSE
+.eslintignore
+.prettierrc
+.prettierignore
+.eslint.config
+.cjs.stylelint
+.config.cjs;
+babel.config.cjs.gitignore.npmignore;
+commitlint.config.js.env;
+Dockerfile
+docker-compose.yml
+dist
